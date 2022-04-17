@@ -1,39 +1,76 @@
 body {
   margin: 0;
-  color: #40514E;
+  color: #40514e;
   text-align: center;
-  font-family: 'Merriweather', serif;
-  background-color: #EAF6F6;
+  /* font-family: "Montserrat"; */
+  font-family: "Libre Baskerville";
+  background-color: #eaf6f6;
+}
+
+main {
+  background-color: #f1f1e8;
+}
+
+article {
+  background-color: #f1f1e8;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: medium;
 }
 
 a {
   text-decoration: none;
   margin: 10px 20px;
 }
-a:hover{
-  color:#EAF6F6;
+
+a:link {
+  color: #5e8b7e;
+}
+
+a:visited {
+  color: #5e8b7e;
+}
+
+/* // улучшить надо ссылки  done */
+a:hover {
+  color: #eaf6f6;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 0;
 }
 
 h1 {
   font-size: 5.625rem;
   /* 1 em is equal to 16px which is equal to 100% */
   /* When sizing we should use rem instead of em so by this way we will be more specific with our text size*/
-  margin: 50px auto 0 auto;
-  font-family: 'Great Vibes', cursive;
-  color: #5E8B7E;
+  margin: 0 auto 0 auto;
+  padding-top: 50px;
+  font-family: "Great Vibes", cursive;
+  color: #5e8b7e;
 }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
-  color: #5E8B7E;
+  color: #5e8b7e;
   font-weight: normal;
 }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  padding: auto;
+  display: inline;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 0;
-  color: #A7C4BC;
+  color: #a7c4bc;
+}
+
+p {
+  line-height: 2;
 }
 
 hr {
@@ -42,23 +79,67 @@ hr {
   border-width: 5px;
   width: 5%;
 }
-p{
-  line-height: 2;
+
+.myButton {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  font-size:1.3rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  color: #5e8b7e;
+  background-color:#206a5d ;
+  text-align: center;
+  border-radius: 11px;
+  transition: all 0.2s;
 }
 
-.TopContainer {
-  background-color: #2F5D62;
+.myButton:hover {
+  color: #f1f1e8;
+  background-color: #bfdcae;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.Menu-bar {
+  background-color: #bfdcae;
+  padding-top: 40px;
+}
+
+.header-link {
+  position: relative;
+  bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.MainContainer {
+  background-color: #f1f1e8;
   position: relative;
   /* this will make everything inside to be relative to TopContainer
-  otherwise it will be relative to body tag which is parent*/
+    otherwise it will be relative          <p class="copyright">© 2022 Myktybek Sattarov</p> to body tag which is parent*/
   padding-top: 130px;
-  padding-bottom: 23px;
+  padding-bottom: 20px;
   margin-bottom: 2px;
 }
 
-.Web {
-  text-decoration: underline;
-  /* This is where we can use span to select more specific task*/
+.Skills-container {
+  background-color: #f1f1e8;
+}
+
+.Education-container {
+  background-color: #f1f1e8;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.Main-Place {
+  background-color: #f1f1e8;
+  padding-top: 100px;
 }
 
 .top-cloud {
@@ -78,12 +159,23 @@ p{
   top: 27px;
 }
 
-.Middle-container {}
+.Bottom-menu {
+  padding-top: 31px;
+  background-color: #206a5d;
+}
 
-.intro{
+.footer-link {
+  position: relative;
+  color: #5e8b7e;
+  bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.intro {
   width: 50%;
   margin: auto;
 }
+
 .profilePhoto {
   width: 200px;
   height: 200px;
@@ -103,7 +195,7 @@ p{
 
 .profile {
   width: 50%;
-  margin: 100px auto;
+  margin: 0 auto;
 }
 
 .skills {
@@ -113,57 +205,61 @@ p{
 
 .skill-row {
   width: 50%;
-  margin: 100px auto;
+  margin: 20px auto 100px auto;
   text-align: left;
 }
 
-.btn {
-  -webkit-border-radius: 8;
-  -moz-border-radius: 8;
-  border-radius: 8px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  background: #5E8B7E;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background: #2F5D62;
-  text-decoration: none;
-}
-
-.contact-me {
-  margin-top: 80px;
-}
-
-.contact-me p {
-  padding-bottom: 20px;
-}
-
-.Bottom-container {
-  margin-top: 100px;
-  padding-top: 100px;
-  background-color: #A7C4BC;
-}
-
-.footer-link {
+.skill-hr {
   position: relative;
-  color: #5E8B7E;
-  bottom: 37px;
-  font-family: 'Montserrat', sans-serif;
+  margin-top: 50px;
 }
 
-.copyright {
-  position: relative;
-  bottom: 20px;
-  color: #EAF6F6;
-  margin-bottom: 0;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.75rem;
-  padding: 15px 0;
+.cpp {
+  padding-top: 50px;
 }
-.copyright:hover{
-  color: #2F5D62;
+
+.edu-row {
+  width: 50%;
+  margin: 20px auto 100px auto;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.Bktl {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.Elte {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.edu-hr {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.Table {
+  margin: auto;
+  position: relative;
+  padding-left: 140px;
+  font-size: 1.4rem;
+}
+
+.Feedback-click:hover {
+  color: #a7c4bc;
+}
+
+.student {
+  position: relative;
+  margin-left: 20px;
+}
+
+.position {
+  float: left;
 }
